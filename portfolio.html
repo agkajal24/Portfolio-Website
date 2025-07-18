@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header_port">Portfolio</div>
+            <div class="line">
+                <div class="header_line">Home</div>
+                <div class="header_line">About</div>
+                <div class="header_line">Services</div>
+                <div class="header_line">Skills</div>
+                <div class="header_line">Project</div>
+                <div class="header_line">Contact</div>
+            </div>
+        </div>
+    </header>
+
+      <!--about -->
+     <main>
+        <div class="middle">
+            <h2>About</h2>
+            <p>Hi There!! Fourth-year B-Tech student passionate about programming with expertise in C/C++ and proficient in video editing, I blend technical skills with creativity. Eager to explore the intersection of technology and design, I bring a unique blend of analytical thinking . Committed to continuous learning and collaborative problem-solving.</p>
+        </div>
+        <div class="main">
+            <div class="box">
+                <h2 id="box1">Hey There!</h2>
+                <h2 id="box2">My name is <span class="purple">Kajal</span></h2>
+                <br><br>
+                <h2 id="box2">And I am a passionate</h2>
+                <span id="box3"></span>
+            </div>
+            <div class="pic"> 
+                <img id= img src="k4.jpg" alt="">
+            </div>
+        </div>
+        education
+        <div class="main_sec">
+            <h1 id="educ"><span class="purple1">E</span>DUCATION</h1>
+            <div class="container">
+                <div id="first">
+                    <h2 id="text">Arya College of Engineering & I.T</h2>
+                    <h4 id="text_sec">Bachelor of Technology in Information Technology</h4>
+                    <h6 id="text_sec">9.6 CGPA</h6>
+                    <p>(2023-26)expected</p>
+                </div>
+                <div id="second">
+                    <h2 id="text">Sony Academy Sr. Sec. School</h2>
+                    <h4 id="text_sec">class - 12th</h4>
+                    <h6 id="text_sec">89.80%</h6>
+                    <p>(2022)</p> 
+
+                 </div>
+                <div id="third">
+                    <h2 id="text">Sony Academy Sr. Sec. School</h2>
+                    <h4 id="text_sec">class - 10th</h4>
+                    <h6 id="text_sec">92.17%</h6>
+                    <p>(2020)</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <div class="skills">
+        <h1 id="educ"><span class="purple1">S</span>KILLS</h1>
+        <div class="skills_all">
+            <div id="all">
+                <img src="html-5.png" alt="" id="all">
+                <h2 id="text1">HTML</h2>
+            </div>
+            <div id="all">
+                <img src="css-3.png" alt="" id="all">
+                <h2 id="text1">CSS</h2>
+            </div>
+            <div id="all">
+                <img src="java-script.png" alt="" id="all">
+                <h2 id="text1">JavaScript</h2>
+            </div>
+            <div id="all">
+                <img src="c-.png" alt="" id="all">
+                <h2 id="text1">C++</h2>
+            </div>
+        </div>
+    </div>
+    <div class="resume">
+        <h1 id="educ"><span class="purple1">My</span> RESUME</h1>
+        <div class="logo">
+            <div id="resume_logo">
+                <img id="logo_image" src="applicant.png" alt="">
+            </div>
+            <div id="download">
+                <h2 id="logo_text">Here, Can downloaded my Resume</h2>
+                <!-- <button onclick="viewResume()" id="btn">Download</button> -->
+                <!-- <a href="Imp. Resume.png" id="link"></a> -->
+
+                <button id="btn" onclick="downloadResume()">Download Resume</button>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <h1 id="educ"><span class="purple1">C</span>ONTACT</h1>
+            <div class="div">
+            <div class="page">
+            <input type="text" placeholder="Enter Name" id="msg">
+            <input type="text" placeholder="Enter E-Mail" id="msg">
+            <input type="password" placeholder="Enter Password" id="msg">
+            <textarea name="" id="msg1">Message</textarea>
+            <button id="btn1">Submit</button>
+        </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="contact">
+                <i class="fa-solid fa-address-book"></i>
+                <h4>Contact No. +91-6377022677</h4>
+            </div>
+            <div class="social"></div>
+            <div id="social_logo">
+                <a href="https://www.linkedin.com/in/kajal-agrawal-751135263/"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+            </div>
+            <div id="social_logo">
+                <a href="https://github.com/agkajal24"><i class="fa-brands fa-square-github" style="color: white;"></i></a>
+            </div>
+            <div id="social_logo">
+                <a href="https://www.instagram.com/kagrawal860/"><i class="fa-brands fa-square-instagram" style="color: white;"></i></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#box3', {
+      strings: ['Web Developer', 'Graphic Designer', 'Web Designer','Video Editor' ],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+  function viewResume() {
+    window.open('Imp. Resume.png', '_blank');
+  }
+</script>
+<!--  -->
+<script>
+  function downloadResume() {
+    const link = document.createElement('a');
+    link.href = 'Resume1.pdf';  // path to your resume
+    link.download = 'My_Resume.pdf';  // download file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+    </body>
+</html>
